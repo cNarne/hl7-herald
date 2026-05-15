@@ -1,0 +1,27 @@
+﻿{
+  MessageControlId: MSG001,
+  PatientId: 123456,
+  PatientIdType: MR,
+  OrderGroups: [
+    {
+      OrderControlCode: NW,
+      OrderId: ORD-7890,
+      UniversalServiceId: 85025,
+      UniversalServiceText: CBC WITH DIFF,
+      UniversalServiceCodingSystem: LN,
+      OrderedDateTime: DateTimeOffset_1,
+      OrderingProviderName: JANE^MD,
+      HasObrSegment: true
+    },
+    {
+      OrderControlCode: NW,
+      OrderId: ORD-7891,
+      UniversalServiceId: 80048,
+      UniversalServiceText: BMP,
+      UniversalServiceCodingSystem: LN,
+      OrderedDateTime: DateTimeOffset_1,
+      OrderingProviderName: JANE^MD,
+      HasObrSegment: true
+    }
+  ]
+}

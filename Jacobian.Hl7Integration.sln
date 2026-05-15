@@ -1,0 +1,50 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ED3FABED-FA63-436A-8177-4D65FD200A69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1E238768-3210-402C-B682-892DBE1EBC4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jacobian.Hl7Integration.Domain", "src\Jacobian.Hl7Integration.Domain\Jacobian.Hl7Integration.Domain.csproj", "{13A16B94-1985-4769-9BB1-70D93576D0C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jacobian.Hl7Integration.Parser", "src\Jacobian.Hl7Integration.Parser\Jacobian.Hl7Integration.Parser.csproj", "{EE8F3C5F-97F5-4FAB-B78E-0EA05B400861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jacobian.Hl7Integration.Worker", "src\Jacobian.Hl7Integration.Worker\Jacobian.Hl7Integration.Worker.csproj", "{C6033414-2174-4032-863D-FB05487C6634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jacobian.Hl7Integration.Parser.Tests", "tests\Jacobian.Hl7Integration.Parser.Tests\Jacobian.Hl7Integration.Parser.Tests.csproj", "{2FA921F7-875E-40E2-9EF4-F6768BAD7BF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13A16B94-1985-4769-9BB1-70D93576D0C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A16B94-1985-4769-9BB1-70D93576D0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A16B94-1985-4769-9BB1-70D93576D0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A16B94-1985-4769-9BB1-70D93576D0C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8F3C5F-97F5-4FAB-B78E-0EA05B400861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8F3C5F-97F5-4FAB-B78E-0EA05B400861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8F3C5F-97F5-4FAB-B78E-0EA05B400861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8F3C5F-97F5-4FAB-B78E-0EA05B400861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6033414-2174-4032-863D-FB05487C6634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6033414-2174-4032-863D-FB05487C6634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6033414-2174-4032-863D-FB05487C6634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6033414-2174-4032-863D-FB05487C6634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FA921F7-875E-40E2-9EF4-F6768BAD7BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA921F7-875E-40E2-9EF4-F6768BAD7BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA921F7-875E-40E2-9EF4-F6768BAD7BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA921F7-875E-40E2-9EF4-F6768BAD7BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13A16B94-1985-4769-9BB1-70D93576D0C9} = {ED3FABED-FA63-436A-8177-4D65FD200A69}
+		{EE8F3C5F-97F5-4FAB-B78E-0EA05B400861} = {ED3FABED-FA63-436A-8177-4D65FD200A69}
+		{C6033414-2174-4032-863D-FB05487C6634} = {ED3FABED-FA63-436A-8177-4D65FD200A69}
+		{2FA921F7-875E-40E2-9EF4-F6768BAD7BF1} = {1E238768-3210-402C-B682-892DBE1EBC4A}
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

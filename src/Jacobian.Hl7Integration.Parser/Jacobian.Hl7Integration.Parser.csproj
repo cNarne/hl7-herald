@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jacobian.Hl7Integration.Domain\Jacobian.Hl7Integration.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- NHapi versions are centralised in Directory.Packages.props.
+         Pin exact versions — NHapi upgrades can change lenient-parse behaviour for
+         non-conformant messages (missing MSH-9 component 3, non-standard delimiters).
+         Treat any NHapi bump as requiring full corpus regression before merging.
+
+         NHapi.Base: core parser infrastructure.
+         NHapi.Model.V24: typed message/segment/datatype model for HL7 v2.4.
+         If sending systems emit v2.3 or v2.5 messages, add the corresponding model package
+         and branch on MSH-12 (Version ID) in Hl7OrmParser. -->
+    <PackageReference Include="NHapi.Base" />
+    <PackageReference Include="NHapi.Model.V24" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+  </ItemGroup>
+
+</Project>

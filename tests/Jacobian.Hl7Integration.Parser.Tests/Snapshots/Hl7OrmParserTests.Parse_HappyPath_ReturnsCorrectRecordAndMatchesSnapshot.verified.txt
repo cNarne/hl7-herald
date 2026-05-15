@@ -1,0 +1,23 @@
+﻿{
+  MessageControlId: MSG001,
+  SendingApplication: OrderSystem,
+  SendingFacility: HospitalA,
+  MessageType: ORM^O01,
+  MessageDateTime: DateTimeOffset_1,
+  PatientId: 123456,
+  PatientIdType: MR,
+  PatientName: DOE^JOHN^A,
+  DateOfBirth: DateTimeOffset_2,
+  OrderGroups: [
+    {
+      OrderControlCode: NW,
+      OrderId: ORD-7890,
+      UniversalServiceId: 85025,
+      UniversalServiceText: CBC WITH DIFF,
+      UniversalServiceCodingSystem: LN,
+      OrderedDateTime: DateTimeOffset_1,
+      OrderingProviderName: JANE^MD,
+      HasObrSegment: true
+    }
+  ]
+}

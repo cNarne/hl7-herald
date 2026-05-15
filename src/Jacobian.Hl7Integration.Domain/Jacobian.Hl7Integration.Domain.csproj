@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Domain project has zero runtime dependencies.
+         It must not reference NHapi, Microsoft.Extensions.*, or any infrastructure concern.
+         Persistence layers, ACK generators, and API surfaces can reference Domain without
+         pulling in parser or host infrastructure. All shared build settings live in
+         Directory.Build.props. -->
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/global.json",
+  "sdk": {
+    "version": "8.0.400",
+    "rollForward": "latestPatch"
+  },
+  "comments": [
+    "Pin the .NET SDK version so all team members and CI agents produce identical builds.",
+    "rollForward=latestPatch allows security patches without requiring a global.json bump.",
+    "To upgrade to a new feature band, update 'version' and re-run 'dotnet build' to verify."
+  ]
+}

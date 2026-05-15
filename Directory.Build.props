@@ -1,0 +1,28 @@
+<Project>
+  <!--
+    Shared MSBuild properties for all projects in this solution.
+    Per dotnet-project-structure: centralise here to avoid repeating in every .csproj.
+
+    Individual projects may override these values; Directory.Build.props is imported
+    BEFORE the project file, so project-level settings win.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Treat all warnings as errors in all projects.
+         If a project genuinely needs to suppress a warning, use <NoWarn> in the
+         project file with a comment explaining why — do not lower this globally. -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!-- Deterministic builds for reproducible CI artifacts -->
+    <Deterministic>true</Deterministic>
+    <!-- All assemblies share the same root namespace pattern -->
+    <RootNamespace>Jacobian.Hl7Integration</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Analysers applied to all projects -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

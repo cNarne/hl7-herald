@@ -1,0 +1,38 @@
+<Project>
+  <!--
+    Central Package Management — all NuGet versions declared here.
+    Per dotnet-project-structure: prevents version drift across projects.
+    Individual .csproj files reference packages without Version= attributes.
+
+    IMPORTANT for HL7: NHapi upgrades can change lenient-parse behaviour for
+    non-conformant messages. Treat any NHapi bump as requiring full regression
+    against the captured message corpus before merging.
+  -->
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup Label="NHapi">
+    <PackageVersion Include="NHapi.Base" Version="3.1.0" />
+    <PackageVersion Include="NHapi.Model.V24" Version="3.1.0" />
+  </ItemGroup>
+  <ItemGroup Label="Microsoft.Extensions">
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Options" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Options.DataAnnotations"         Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup Label="Test">
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageVersion Include="xunit" Version="2.9.0" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
+    <PackageVersion Include="FluentAssertions" Version="6.12.0" />
+    <PackageVersion Include="Verify.Xunit" Version="24.0.0" />
+    <PackageVersion Include="NSubstitute" Version="5.1.0" />
+  </ItemGroup>
+  <ItemGroup Label="Analysers">
+    <PackageVersion Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="8.0.0" />
+  </ItemGroup>
+</Project>
